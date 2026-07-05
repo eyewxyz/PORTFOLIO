@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'Neue Montreal';
     src: url('../assets/font/NeueMontreal-Bold.woff2') format('woff2');
-    font-weight: 800 900;
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -656,51 +656,31 @@ body.is-loaded #portfolio {
 }
 
 .project-visual img {
-    /* width: min(72%, 230px); */
-    /* max-height: 68%; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .project-visual.logo-visual {
-    /* padding: clamp(26px, 4vw, 48px); */
     background:
         radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.08), transparent 54%),
         #151515;
 }
 
 .project-visual.logo-visual img {
-    /* width: min(76%, 250px); */
-    max-width: 100%;
-    height: 100%;
     filter: saturate(0.96) contrast(1.02);
 }
 
-.project-visual.logo-visual.samsung img {
-    /* width: min(62%, 210px); */
-    width:100%;
-    height: 100%;
-}
-
 .project-visual.logo-visual.cj {
-    /* background:
+    background:
         radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.11), transparent 58%),
-        #161616; */
-        width:100%;
-        height: 100%;
-}
-
-.project-visual.logo-visual.lexus img {
-    /* width: min(68%, 220px); */
-    width:100%;
-        height: 100%;
+        #161616;
 }
 
 .project-visual.logo-visual.gradiant {
-    /* background:
+    background:
         linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)),
-        #171717; */
-        width:100%;
-        height: 100%;
+        #171717;
 }
 
 .project-visual.placeholder {
@@ -712,20 +692,14 @@ body.is-loaded #portfolio {
 
 .project-visual.placeholder.kia {
     background: #101a22;
-    width:100%;
-        height: 100%;
 }
 
 .project-visual.placeholder.kolmar {
     background: #293026;
-    width:100%;
-        height: 100%;
 }
 
 .project-visual.placeholder.lexus {
     background: #191919;
-    width:100%;
-        height: 100%;
 }
 
 .project-visual.placeholder.gradient,
