@@ -1,438 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>최인영 포트폴리오</title>
-    
-    <!--  icon  -->
+    <meta name="description" content="최인영 프론트엔드 개발자 포트폴리오">
+    <title>최인영 | Frontend Developer Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/portfolio_icon2.png">
-
-    <!--  css file  -->
-    <link href="css/css.css" rel="stylesheet">
-
-    <!--  font awesome icons  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    
-    <!--  script file  -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/jquery.easeScroll.js"></script>
-    <script>
-    $(document).ready(function() {
-
-        $("html").easeScroll();
-
-    });
-
-
-    </script>    
+    <link rel="stylesheet" href="css/css.css">
 </head>
-
 <body>
-
-    <div class="splash">
-        <div class="splash-title-container">
-            <h3 class="splash-title">CHOI&nbsp; IN&nbsp;YOUNG &nbsp;&nbsp;-&nbsp;&nbsp; PORTFOLIO</h3>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <span>CHOI IN YOUNG</span>
+            <strong>PORTFOLIO</strong>
+            <i></i>
         </div>
     </div>
+    <div class="overlay" aria-hidden="true"></div>
 
-    <div id="portfolio">
-        <!--  ======================= Start Left Area ============================== -->
-        <div class="left">
-
-            
-            <div class="title">
-                <ul>
-                    <li class="header">CHOI IN YOUNG - PORTFOLIO</li>
-                    <li class="mode">MODE</li>
-                </ul>
+    <main id="portfolio">
+        <aside class="profile-panel" aria-label="프로필">
+            <div class="brand">
+                <strong>CHOI IN YOUNG</strong>
+                <span>FRONTEND DEVELOPER PORTFOLIO</span>
             </div>
 
-            <div class="main">
-                <div class="image">
-                    <img src="img/profile18.png" alt="">
+            <section class="profile-card">
+                <div class="profile-image">
+                    <img src="img/profile18.png" alt="최인영 프로필 사진">
                 </div>
-                <h1>최인영</h1>
-                <h2>Inyoung Choi</h2>
-                <p>1992.12.11</p>
-                <a href="introduce/CHOIINYOUNG_CV.pdf" download class="download">
-                    <i class="fas fa-save"></i> 이력서 다운로드
-                </a>
-            </div>
+                <p class="eyebrow">MAINTAINABLE FRONTEND DEVELOPMENT</p>
+                <h1>프론트엔드 개발자<br>최인영</h1>
+                <p class="summary">
+                    삼성, 기아, CJ 등 대형 브랜드 프로젝트에서 React 기반 컴포넌트 설계, 인터랙션 개발, 운영 구조 개선 경험을 담당해왔습니다.
+                </p>
+                <div class="profile-actions">
+                    <a href="mailto:eyewhy92@gmail.com">Email</a>
+                    <a href="introduce/CHOIINYOUNG_CV.pdf" download>Resume</a>
+                </div>
+            </section>
 
-            <div class="contact">
-                <p><span>E</span> eyewhy@naver.com</p>
-                <p><span>T</span> 010-4351-1211</p>
+            <dl class="contact-list">
+                <div>
+                    <dt>Email</dt>
+                    <dd>eyewhy92@gmail.com</dd>
+                </div>
+                <div>
+                    <dt>Phone</dt>
+                    <dd>010-4351-1211</dd>
+                </div>
+                <div>
+                    <dt>Career</dt>
+                    <dd>4년+</dd>
+                </div>
+            </dl>
+        </aside>
 
-                <p class="text">Copyright © 2021. Choi Inyoung All Rights Reserved.</p>
+        <nav class="index-panel" aria-label="포트폴리오 섹션">
+            <button class="tab-link is-active" type="button" data-tab-target="overview">
+                <span class="tab-index">01</span>
+                <span class="tab-label">Overview</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="samsung">
+                <span class="tab-index">02</span>
+                <span class="tab-label">Design Samsung</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="cj">
+                <span class="tab-index">03</span>
+                <span class="tab-label">CJ Group</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="kia">
+                <span class="tab-index">04</span>
+                <span class="tab-label">Kia Global</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="kolmar">
+                <span class="tab-index">05</span>
+                <span class="tab-label">Kolmar Global</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="lexus">
+                <span class="tab-index">06</span>
+                <span class="tab-label">Lexus Korea</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="gradiant">
+                <span class="tab-index">07</span>
+                <span class="tab-label">Gradiant</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="selected">
+                <span class="tab-index">08</span>
+                <span class="tab-label">Selected Works</span>
+            </button>
+            <button class="tab-link" type="button" data-tab-target="ai">
+                <span class="tab-index">09</span>
+                <span class="tab-label">AI Workflow</span>
+            </button>
+        </nav>
 
-            </div>
-
-        </div> 
-
-        <!--  ======================= End Left Area ============================== -->
-
-
-
-
-
-        <!--  ======================= Start Middle Area ============================== -->
-        <div class="middle">
-            <ul class="tabs">
-                <li class="tab tab1"><a href="#" data-tab-target="#content1" class="active"><span class="one">· About Me</span><span class="two">about</span></a></li>
-                <!--<li class="tab tab1"><a href="#" data-tab-target="#content1" class="active"><span class="one">about me</span><span class="two">about</span></a></li>-->
-                <li class="tab tab2"><a href="#" data-tab-target="#content2"><span class="one">· Project - 포트폴리오</span><span class="two">p-1</span></a></li>
-                <li class="tab tab3"><a href="#" data-tab-target="#content3"><span class="one">· Project - 홍콩사이트</span><span class="two">p-2</span></a></li>
-                <li class="tab tab4"><a href="#" data-tab-target="#content4"><span class="one">· Project - 디스패치</span><span class="two">p-3</span></a></li>
-                <li class="tab tab5"><a href="#" data-tab-target="#content5"><span class="one">· Project - 여의도 IFC몰</span><span class="two">p-4</span></a></li>
-                <li class="tab tab6"><a href="#" data-tab-target="#content6"><span class="one">· Project - 기후 프로젝트 NGO</span><span class="two">p-5</span></a></li>
-                <li class="tab tab7"><a href="#" data-tab-target="#content7"><span class="one">· Project - 부트스트랩</span><span class="two">p-6</span></a></li>
-                <li class="tab tab8"><a href="#" data-tab-target="#content8"><span class="one">· Project - 카페24</span><span class="two">p-7</span></a></li>
-                <li class="tab tab9"><a href="#" data-tab-target="#content9"><span class="one">· Project - 워드프레스</span><span class="two">p-8</span></a></li>
-                <li class="tab tab10"><a href="#" data-tab-target="#content10"><span class="one">· Project - UI/UX</span><span class="two">p-uiux</span></a></li>
-                
-            </ul>
-        </div>
-        <!--  ======================= End Middle Area ============================== -->
-
-
-
-
-
-        <!--  ======================= Start Right Area ============================== -->
-        <div class="right">
-
-            <div id="content1" class="content active" data-tab-content>
-
-                <!--콘텐츠 갤러리-->
-                <ul class="about_me">
-
-                    <li class="about">
-                        <div class="skills-bar">
-                            <h3>안녕하십니까. 신입 지원자 최인영입니다.</h3>
-                            <p>존경해 마지않는 선배분들과 함께 다양하고 새로운 경험들을 마주하면서 스스로 ‘더 발전적이게 되어야겠구나’라는 동기 부여를 받고 싶습니다.</p>
-                        </div>
-                    </li>
-
-                    <li class="about">
-                        <div class="skills-bar skills">
-                            <h3>Skills</h3>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="progress-line html"><span></span></div>
-                                <div class="info">
-                                    <span>- HTML 마크업</span><br/>
-                                    <span>- HTML5 태그</span><br/>
-                                    <span>- 반응형 게시판 제작</span>
-                                </div>
+        <section class="content-panel" aria-live="polite">
+            <article class="tab-content is-active" id="overview">
+                <div class="section-heading">
+                    <p>Overview</p>
+                    <h2>원칙을 지키며 유지보수 가능한 구조를 만드는 개발자</h2>
+                </div>
+                <div class="overview-grid">
+                    <section class="card lead-card">
+                        <div class="overview-split">
+                            <div>
+                                <h3>About</h3>
+                                <p>
+                                    React 기반 웹 서비스의 구축과 운영 과정에서,
+                                    요구사항을 견고한 코드와 재사용 가능한 컴포넌트 구조로 구현해왔습니다.
+                                    새로운 방식보다 프로젝트 원칙과 안정성을 먼저 보고, 유지보수하기 쉬운 구조로 정리하는 개발자입니다.
+                                </p>
                             </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="progress-line css"><span></span></div>
-                                <div class="info">
-                                    <span>- CSS3 기본문법</span><br/>
-                                    <span>- 레이아웃 및 적용 : CSS3 스타일링, 애니메이션, 미디어쿼리 적용</span><br/>
-                                    <span>- Flexbox</span><br/>
-                                    <span>- Grid</span>
-                                </div>
-                            </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>jQuery</span>
-                                </div>
-                                <div class="progress-line jquery"><span></span></div>
-                                <div class="info">
-                                    <span>- jQuery 스타일 변경</span><br/>
-                                    <span>- 이벤트, 애니메이션</span><br/>
-                                    <span>- each & class 관련 메서드</span><br/>
-                                    <span>- Slideshow 구현 </span><br/>
-                                    <span>- 스크롤 시 헤더고정 (축소되는 헤더) </span><br/>
-                                    <span>- 탭 구현 </span><br/>
-                                    <span>- Lightbox 효과 구현 </span><br/>
-                                    <span>- jQuery 플러그인 활용(Modernizr 활용 등) </span><br/>
-                                    <span>- Parallax Scrolling </span><br/>
-                                </div>
-                            </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>java script</span>
-                                </div>
-                                <div class="progress-line javascript"><span></span></div>
-                                <div class="info">
-                                    <span>- 기본 문법 이해</span><br/>
-                                    <span>- 응용</span><br/>
-                                    
-                                </div>
+                            <div class="career-mini">
+                                <h3>Career</h3>
+                                <ul>
+                                    <li><span>2023.03 ~ 재직중</span><strong>(주)디자인피버 · 프론트엔드 개발자</strong></li>
+                                    <li><span>2021.11 ~ 2022.11</span><strong>(주)빈트와이어 · 웹퍼블리셔</strong></li>
+                                    <li><span>2016.12 ~ 2017.07</span><strong>TOURS HONGKONG · 해외 경험</strong></li>
+                                </ul>
                             </div>
                         </div>
-                    </li>
+                    </section>
+                    <section class="card metric-card">
+                        <strong>4년+</strong>
+                        <span>웹 개발 실무 경력</span>
+                    </section>
+                    <section class="card metric-card">
+                        <strong>2023.03 ~</strong>
+                        <span>디자인피버 재직중 · 운영 리딩</span>
+                    </section>
+                    <section class="card metric-card">
+                        <strong>React</strong>
+                        <span>TypeScript · GSAP · CMS</span>
+                    </section>
+                </div>
+                <section class="card skill-card">
+                    <h3>Core Skills</h3>
+                    <ul class="tag-list">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript ES6</li>
+                        <li>HTML5/CSS3</li>
+                        <li>SCSS</li>
+                        <li>Tailwind</li>
+                        <li>GSAP</li>
+                        <li>Sanity CMS</li>
+                        <li>HTTP API</li>
+                        <li>Component Refactoring</li>
+                        <li>Figma</li>
+                        <li>Git</li>
+                        <li>AI-assisted workflow</li>
+                    </ul>
+                </section>
+            </article>
 
-                    <li class="about">
-                        <div class="skills-bar">
-                            <h3>Education</h3>
-                            <p><span>2021</span> SBS컴퓨터아트학원 웹학과 수료</p>
-                            <p><span>2018</span> 대구가톨릭대학교 중국어전공 및 IT경영전공 졸업</p>
-                            <p><span>2010</span> 대구오성고등학교 졸업</p>
-                        </div>
-                    </li>
+            <article class="tab-content" id="samsung">
+                <div class="section-heading">
+                    <p>Project 01 · 개발 운영 리딩</p>
+                    <h2>Design Samsung</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual samsung" href="https://design.samsung.com/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/samsung.webp" alt="Design Samsung 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Period</dt><dd>2023 ~ 현재</dd></div>
+                            <div><dt>Role</dt><dd>개발 운영 리딩</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://design.samsung.com/" target="_blank" rel="noreferrer">design.samsung.com</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>운영 프로젝트 개발 리딩: 2026 메인 리뉴얼, 언팩 콘텐츠 등</li>
+                            <li>브랜드 톤에 맞는 인터랙션 품질 기준 수립 및 코드 리뷰</li>
+                            <li>기획·디자인 변경 시 성능, 유지보수, 일정 리스크 검토와 대안 제안</li>
+                        </ul>
+                        <h3>성과</h3>
+                        <p>반복되던 운영 이슈를 새로운 아이디어로 먼저 정리해 개선안을 제안했고, 빠르게 대응하면서도 브랜드 원칙을 지켜 안정적인 오픈을 만들었습니다.</p>
+                        <ul class="tag-list"><li>JavaScript</li><li>SCSS</li><li>GSAP</li></ul>
+                    </div>
+                </section>
+            </article>
 
-                    <li class="about">
-                        <div class="skills-bar">
-                            <h3>Certificate</h3>
-                            <p><span>2021</span> 웹디자인기능사</p>
-                            <p><span>2020</span> ACA Illustrator CS5</p>
-                            <p><span>2020</span> ACA Adobe Photoshop CS5</p>
-                            <p><span>2005</span> 정보기술자격(ITQ) 아래한글 A등급</p>
-                            <p><span>2004</span> 정보기술자격(ITQ)한글파워포인트 A등급</p>
-                        </div>
-                    </li>
-            <!---->
-                    <li class="about">
-                        <div class="skills-bar tool">
-                            <h3>Tools</h3>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Photoshop</span>
-                                </div>
-                                <div class="progress-line photoshop"><span></span></div>
-                            </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Illustrator</span>
-                                </div>
-                                <div class="progress-line illustrator"><span></span></div>
-                            </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>XD</span>
-                                </div>
-                                <div class="progress-line xd"><span></span></div>
-                            </div>
-                    
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Primiere Pro</span>
-                                </div>
-                                <div class="progress-line pro"><span></span></div>
-                            </div>
+            <article class="tab-content" id="cj">
+                <div class="section-heading">
+                    <p>Project 02 · 마이그레이션 및 구축</p>
+                    <h2>CJ Group Homepage</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual cj" href="https://www.cj.net/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/cj.webp" alt="CJ Group 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Period</dt><dd>2025.07 ~ 2026.01</dd></div>
+                            <div><dt>Role</dt><dd>마이그레이션 및 구축</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://www.cj.net/" target="_blank" rel="noreferrer">cj.net</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>CJ 국문 리뉴얼 및 글로벌 리뉴얼까지 두 차례 리뉴얼 개발 참여</li>
+                            <li>EJS 레거시 구조를 React 기반 구조로 전체 마이그레이션</li>
+                            <li>컴포넌트 기반 구조 설계 및 GSAP 인터랙션 구조화</li>
+                            <li>Sanity CMS API 연동, 운영 가이드 제작 및 인수인계 전담</li>
+                        </ul>
+                        <h3>성과</h3>
+                        <p>CJ 리뉴얼과 CJ 글로벌 전체 리뉴얼을 연이어 진행하며 기존 화면을 React 구조로 정리했고, 운영 가이드까지 정리해 안정적으로 이관했습니다.</p>
+                        <ul class="tag-list"><li>React</li><li>TypeScript</li><li>GSAP</li><li>Sanity CMS</li></ul>
+                    </div>
+                </section>
+            </article>
 
-                        </div>
-                    </li>
+            <article class="tab-content" id="kia">
+                <div class="section-heading">
+                    <p>Project 03 · 리팩토링 및 구축</p>
+                    <h2>Kia Global</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual kia" href="https://worldwide.kia.com/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/kia.webp" alt="Kia Global 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Period</dt><dd>2025.07 ~ 2026.01</dd></div>
+                            <div><dt>Role</dt><dd>리팩토링 및 구축</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://worldwide.kia.com/" target="_blank" rel="noreferrer">worldwide.kia.com</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>IR·Sustainability 전체 페이지 리팩토링 리딩</li>
+                            <li>외부 작업 산출물의 불안정한 마크업 구조 개선</li>
+                            <li>운영 유지보수를 위한 React 컴포넌트화 및 작업 기준 정리</li>
+                        </ul>
+                        <h3>성과</h3>
+                        <p>불안정했던 마크업과 구조들을 컴포넌트 단위로 다시 정리해, 운영 중 수정과 유지보수가 가능한 구조로 이끌었습니다.</p>
+                        <ul class="tag-list"><li>React</li><li>TypeScript</li><li>Tailwind</li><li>Figma</li></ul>
+                    </div>
+                </section>
+            </article>
 
-                    
+            <article class="tab-content" id="kolmar">
+                <div class="section-heading">
+                    <p>Project 04 · 인터랙션 전담</p>
+                    <h2>Kolmar Global</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual kolmar" href="https://kolmarglobal.com/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/kolmar.webp" alt="Kolmar Global 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Period</dt><dd>2024.04 ~ 2024.11</dd></div>
+                            <div><dt>Role</dt><dd>인터랙션 구현 및 구축</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://kolmarglobal.com/" target="_blank" rel="noreferrer">kolmarglobal.com</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>무한 캐러셀, 패럴랙스, 가로 스크롤 등 인터랙션 모션 구현 전담</li>
+                            <li>마케터 협업으로 GA 스크립트 설치 및 데이터 수집 환경 구축</li>
+                            <li>산출물·운영 가이드 작성 및 Sanity CMS 이관</li>
+                        </ul>
+                        <h3>성과</h3>
+                        <p>새로운 모션 구현과 GA 세팅을 함께 맡아 실행했고, 오픈 이후에도 데이터를 보며 개선할 수 있는 기반을 마련했습니다.</p>
+                        <ul class="tag-list"><li>JavaScript</li><li>GSAP</li><li>Sanity CMS</li><li>GA</li></ul>
+                    </div>
+                </section>
+            </article>
 
-                    
+            <article class="tab-content" id="lexus">
+                <div class="section-heading">
+                    <p>Project 05 · 브랜드 운영</p>
+                    <h2>Lexus Korea</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual lexus" href="https://www.lexus.co.kr/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/lexus.webp" alt="Lexus Korea 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Role</dt><dd>운영 개발</dd></div>
+                            <div><dt>Scope</dt><dd>콘텐츠 운영</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://www.lexus.co.kr/" target="_blank" rel="noreferrer">lexus.co.kr</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>렉서스 사이트 운영 및 콘텐츠 업데이트 대응</li>
+                            <li>브랜드 가이드에 맞춘 UI 품질 유지, 적응형 화면 작업</li>
+                        </ul>
+                        <h3>성과</h3>
+                        <p>운영 피드백을 꼼꼼하게 반영했고, 정해진 일정과 기한 안에서 마무리하기 위해 책임감 있게 대응했습니다.</p>
+                        <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Standard</li></ul>
+                    </div>
+                </section>
+            </article>
 
-                    
-                </ul>
-                    
-                <!--//콘텐츠 갤러리-->
+            <article class="tab-content" id="gradiant">
+                <div class="section-heading">
+                    <p>Project 06 · 웹사이트 개편</p>
+                    <h2>Gradiant Website Renewal</h2>
+                </div>
+                <section class="project-layout">
+                    <a class="project-visual logo-visual gradiant" href="https://www.gradiant.co.kr/" target="_blank" rel="noreferrer">
+                        <img src="assets/images/gradiant.webp" alt="Gradiant 로고">
+                    </a>
+                    <div class="project-detail">
+                        <dl class="project-meta">
+                            <div><dt>Period</dt><dd>2025.01 ~ 2025.04</dd></div>
+                            <div><dt>Role</dt><dd>인터랙션 구현 및 구축</dd></div>
+                            <div><dt>Link</dt><dd><a href="https://www.gradiant.co.kr/" target="_blank" rel="noreferrer">gradiant.co.kr</a></dd></div>
+                        </dl>
+                        <h3>담당 역할</h3>
+                        <ul class="bullet-list">
+                            <li>전체 콘텐츠 퍼블리싱 및 인터랙션 구현</li>
+                            <li>브랜드 아이덴티티 기반 모션 연출</li>
+                            <li>반응형 화면 검수 및 운영 가능한 마크업 구조 정리</li>
+                        </ul>
+                        <h3>강점</h3>
+                        <p>브랜드 아이덴티티를 모션과 콘텐츠 흐름으로 풀어내고, 빠르게 실행하며 페이지 전체의 완성도를 맞췄습니다.</p>
+                        <ul class="tag-list"><li>React</li><li>Interaction</li><li>GSAP</li><li>Responsive</li></ul>
+                    </div>
+                </section>
+            </article>
 
-            </div>
+            <article class="tab-content" id="selected">
+                <div class="section-heading">
+                    <p>Selected Works</p>
+                    <h2>기초 퍼블리싱 프로젝트</h2>
+                </div>
+                <div class="work-list">
+                    <a class="work-card" href="./cafe24/index.html" target="_blank">
+                        <img src="assets/images/portfolio01.png" alt="CAFE24 리뉴얼">
+                        <strong>CAFE24 Renewal</strong>
+                        <span>Responsive · GSAP · JS</span>
+                    </a>
+                    <a class="work-card" href="./apple/index.html" target="_blank">
+                        <img src="assets/images/portfolio02.png" alt="Apple iPad 클론코딩">
+                        <strong>Apple iPad</strong>
+                        <span>Responsive · SCSS · GSAP</span>
+                    </a>
+                    <a class="work-card" href="./ssg/index.html" target="_blank">
+                        <img src="assets/images/portfolio03.png" alt="SSG 모바일">
+                        <strong>SSG Mobile</strong>
+                        <span>Mobile · Data Binding</span>
+                    </a>
+                    <a class="work-card" href="./seoul/index.html" target="_blank">
+                        <img src="assets/images/portfolio05.png" alt="서울시청 클론코딩">
+                        <strong>Seoul Clone</strong>
+                        <span>Accessibility · jQuery</span>
+                    </a>
+                    <a class="work-card" href="./naver/index.html" target="_blank">
+                        <img src="assets/images/portfolio06.png" alt="네이버 클론코딩">
+                        <strong>Naver Clone</strong>
+                        <span>Semantic · Web Standard</span>
+                    </a>
+                    <a class="work-card" href="https://velog.io/@eyewhy/230111" target="_blank" rel="noreferrer">
+                        <img src="assets/images/work01.jpg" alt="2022 프로젝트 정리">
+                        <strong>~2022 Projects</strong>
+                        <span>Hana 1Q · YG-1 · LG</span>
+                    </a>
+                </div>
+            </article>
 
+            <article class="tab-content" id="ai">
+                <div class="section-heading">
+                    <p>How I Work with AI</p>
+                    <h2>AI는 속도를 높이되, 최종 판단은 직접 합니다</h2>
+                </div>
+                <div class="ai-grid">
+                    <section class="card">
+                        <h3>구조 설계 · 문서화</h3>
+                        <p>Claude와 ChatGPT 결과를 교차 검증한 뒤 프로젝트 맥락에 맞게 적용합니다.</p>
+                    </section>
+                    <section class="card">
+                        <h3>내부 코드 포함 작업</h3>
+                        <p>민감한 내부 코드는 외부 도구에 그대로 입력하지 않고, 공개 가능한 범위로 분리해 검토합니다.</p>
+                    </section>
+                    <section class="card">
+                        <h3>실무 적용 영역</h3>
+                        <p>GSAP 구현 검토, 마이그레이션 구조 검증, 성능 최적화 아이디어, 운영 문서 작성에 활용합니다.</p>
+                    </section>
+                    <section class="card">
+                        <h3>팀 내 역할</h3>
+                        <p>AI 산출물을 그대로 쓰기보다 방향을 정리하고 구현 가능성을 판단하는 검토자로 활용합니다.</p>
+                    </section>
+                </div>
+            </article>
+        </section>
+    </main>
 
-            <div id="content2" class="content" data-tab-content>
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            
-                                <img src="img/portfolio.png" alt="#" >
-                            
-                        </div>
+        function activateTab(target, shouldUpdateHash = true) {
+            const fallbackTarget = document.getElementById(target) ? target : 'overview';
 
-                        <h2>Minimal Style Portfolio</h2>
-                        <h6>갤러리 · 미니멀 · 심플한 · 반응형 </h6>
-                        
-                        <p>#Grid&nbsp; #Neumorphism&nbsp; #Shadow&nbsp; #Darkmode</p>
-                        
-                        
-                    </li>
-                </ul>
+            tabButtons.forEach((item) => {
+                item.classList.toggle('is-active', item.dataset.tabTarget === fallbackTarget);
+            });
+            tabContents.forEach((content) => {
+                content.classList.toggle('is-active', content.id === fallbackTarget);
+            });
 
-            </div>
+            if (shouldUpdateHash) {
+                history.replaceState(null, '', `#${fallbackTarget}`);
+            }
+        }
 
+        tabButtons.forEach((button) => {
+            button.addEventListener('click', () => activateTab(button.dataset.tabTarget));
+        });
 
+        document.querySelectorAll('[data-tab-target]').forEach((trigger) => {
+            if (trigger.classList.contains('tab-link')) return;
+            trigger.addEventListener('click', () => activateTab(trigger.dataset.tabTarget));
+        });
 
+        function syncViewportMode() {
+            const isDesktop = window.innerWidth > 820;
+            const isTightHeight = window.innerHeight < 720;
+            document.documentElement.dataset.fit = isDesktop && isTightHeight ? 'compact' : 'comfortable';
+        }
 
-            <div id="content3" class="content" data-tab-content>
+        window.addEventListener('resize', syncViewportMode);
+        syncViewportMode();
+        activateTab(location.hash.replace('#', '') || 'overview', false);
 
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            
-                                <img src="img/hongkongsight5.png" alt="#" >
-                            
-                        </div>
-
-                        <h2>HONGKONG SIGHT</h2>
-                        <h6>창작 · 레트로 · 반응형 </h6>
-                        <p>#Flexbox&nbsp; #Grid&nbsp; #Neon&nbsp; #Jarallax.js&nbsp; #Premiere-Pro-기초</p>
-
-                        <div class="button_wrap">
-                            <div class="button"><a href="hongkongsight/index.html" target="_blank">사이트 바로가기</a></div>
-                            <div class="button"><a href="hongkongsight/hongkongsight.html" target="_blank">기획안 보기</a></div>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div id="content4" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/dispatch3.png" alt="#">
-                        </div>
-
-                        <h2>Dispatch</h2>
-                        <h6>리뉴얼 · 심플한 · 반응형</h6>
-                        <p>#Basic&nbsp; #Float&nbsp; #Darkmode</p>
-                        
-
-                       
-                        <div class="button_wrap">
-                            <div class="button"><a href="Dispatch/index.html" target="_blank">사이트 바로가기</a></div>
-                            <div class="button"><a href="Dispatch/dispatch.html" target="_blank">기획안 보기</a></div>
-                        </div>
-                    </li>
-                </ul>
-                    
-            </div>
-
-            <div id="content5" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/ifcmall2.png" alt="#">
-                        </div>
-
-                        <h2>IFC MALL</h2>
-                        <h6>리뉴얼 · 실험적인 · 인터렉티브 · 1920x1080</h6>
-                        <p>#Glide.js&nbsp; #Vanilla-tilt.js&nbsp; #Locomotive-scroll.js&nbsp;</p>
-                        <div class="button"><a href="IFCMALL/index.html" target="_blank">사이트 바로가기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div id="content6" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/project.png" alt="#">
-                        </div>
-
-                        <h2>The Climate Project NGO</h2>
-                        <h6>리뉴얼 · 베이직 · 반응형</h6>
-                        <p>#Bootstrap5&nbsp; #기본Jquery&nbsp; #Swiper.js</p>
-                        <div class="button"><a href="climateproject/index.html" target="_blank">사이트 바로가기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-
-            
-
-
-            <div id="content7" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/vetement4.png" alt="#">
-                        </div>
-
-                        <h2>VETEMENTS</h2>
-                        <h6>리뉴얼 · 베이직 · 역동적인 · 반응형</h6>
-                        <p>#Bootstrap4&nbsp; #AOS.js</p>
-                        <div class="button"><a href="bootstrap/index.html" target="_blank">사이트 바로가기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div id="content8" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/CAFE24.png" alt="#">
-                        </div>
-
-                        <h2>LINDA FARROW</h2>
-                        <h6>카페24</h6>
-                        <p>#Photoshop&nbsp;</p>
-                        <div class="button"><a href="https://iy92.cafe24.com/" target="_blank">사이트 바로가기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div id="content9" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/hyundai.png" alt="#">
-                        </div>
-
-                        <h2>현대그룹</h2>
-                        <h6>워드프레스</h6>
-                        <p>#Photoshop&nbsp;</p>
-                        <div class="button"><a href="http://choiinyoung.dothome.co.kr/" target="_blank">사이트 바로가기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-
-
-            <div id="content10" class="content" data-tab-content>
-
-                <ul class="news">
-                    <li class="project">
-                        <div class="project_image">
-                            <img src="img/uiux_mockup4.png" alt="#">
-                        </div>
-
-                        <h2>Coupang Play</h2>
-                        <h6>리뉴얼 · UI/UX · 1920x1080</h6>
-                        <p>#XD&nbsp; #Photoshop&nbsp; #Illustrator&nbsp; #After-Effects-기초</p>
-                        
-                       
-                        <div class="button"><a href="uiux/index.html" target="_blank">기획안 보기</a></div>
-                    </li>
-                </ul>
-
-            </div>
-
-            
-            
-        </div>
-    
-    </div>
-        <!--  ======================= End Right Area ============================== -->
-
-
-    
-    
+        window.addEventListener('load', () => {
+            window.setTimeout(() => document.body.classList.add('is-loaded'), 520);
+        });
+    </script>
 </body>
-
 </html>
