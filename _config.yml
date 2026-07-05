@@ -1,0 +1,10 @@
+exclude:
+  - .DS_Store
+  - .gitignore
+  - .vscode/
+  - Dispatch/
+  - IFCMALL/
+  - bootstrap/
+  - climateproject/
+  - hongkongsight/
+  - uiux/
