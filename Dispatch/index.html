@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스패치 | 뉴스는 팩트다!</title>
+
+    <!--  icon  -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/dispatch.jpg">
+
+    <!--  css file  -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <!--  script file  -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/jquery.easeScroll.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $("html").easeScroll();
+
+    });
+
+
+    </script>    
+</head>
+
+<body>
+    <section id="dispatch">
+
+        <!--  ======================= Start Left Area ============================== -->
+        <div class="left">
+
+            <div class="title">
+                <img src="img/logo.png" alt="#">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <button class="search__button"><i class="fas fa-search"></i></button>
+                </form>
+
+                <div class="slide_wrapper">
+                    <div class="slide">
+                        <ul>
+                            <li><img src="img/olympic.png" alt="슬라이드1">
+                                <h2>"부적절한 사진, 잘못했습니다"<br />…MBC, 올림픽 개회식 논란 사과</h2>
+                            </li>
+                            <li><img src="img/slide1.png" alt="슬라이드2">
+                                <h2>[단독] 김용건, 혼전 임신 법적 다툼<br />···39세 연하, 출산 문제로 갈등</h2>
+                            </li>
+                            <li><img src="img/aespa.png" alt="슬라이드3">
+                                <h2>에스파, 美 CAA와 계약 체결<br />…"비욘세·비버와 한솥밥"</h2>
+                            </li>
+                            <li><img src="img/slide2.png" alt="슬라이드4">
+                                <h2>'모가디슈', 주말 박스오피스 1위<br />.."주말 동안 78만 돌파"</h2>
+                            </li>
+                            <li><img src="img/slide3.png" alt="슬라이드5">
+                                <h2>“10kg 증량, 압도적인 피지컬”<br />…남궁민, ‘검은 태양’ 스틸컷</h2>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <ul class="tabs">
+                <li style="--i:1" data-tab-target="#content1" class="tab tab1 active"><a href="#">전체</a></li>
+                <li style="--i:2" data-tab-target="#content2" class="tab tab2"><a href="#">포커스</a></li>
+                <li style="--i:3" data-tab-target="#content3" class="tab tab3"><a href="#">이목구비</a></li>
+                <li style="--i:4" data-tab-target="#content4" class="tab tab4"><a href="#">이슈</a></li>
+                <li style="--i:5" data-tab-target="#content5" class="tab tab5"><a href="#">세계</a></li>
+                <li style="--i:6" data-tab-target="#content6" class="tab tab6"><a href="#">포토</a></li>
+                <li style="--i:7" data-tab-target="#content7" class="tab tab7"><a href="#">비디오</a></li>
+                <li style="--i:8" data-tab-target="#content8" class="tab tab8"><a href="#">패션</a></li>
+                <li style="--i:9" data-tab-target="#content9" class="tab tab9"><a href="#">Canⓓ</a></li>
+            </ul>
+
+
+            <div class="yellow" onclick="menuToggle();">
+                <div class="report"></div>
+                <div class="information">제보하고싶습니다</div>
+            </div>
+
+
+            <div class="wrap">
+                <h1>독자의 제보가 특종의 시작입니다.</h1>
+                <div class="message">
+
+
+                    <form>
+                        <div class="write">
+                            <div class="inputBox">
+                                <p><span>(선택) </span>연락처 혹은 이메일</p>
+                                <input type="text" required="required">
+
+                            </div>
+
+                            <div class="inputBox">
+                                <p><span>* </span>제목</p>
+                                <input type="text" required="required">
+
+                            </div>
+
+                            <div class="inputBox">
+                                <p><span>* </span>제보내용</p>
+                                <textarea required="required"></textarea>
+                            </div>
+
+                            <div class="filebox"> <label>첨부이미지 #1</label> <input type="file"> </div>
+                            <div class="filebox"> <label>첨부이미지 #2</label> <input type="file"> </div>
+                            <div class="filebox"> <label>첨부이미지 #3</label> <input type="file"> </div>
+                            <div class="filebox"> <label>첨부이미지 #4</label> <input type="file"> </div>
+                            <div class="filebox"> <label>첨부이미지 #5</label> <input type="file"> </div>
+                        </div>
+
+                        <div class="sendIt">
+                            <input type="submit" value="제보하기">
+                            <div class="report_logo">
+                                <img src="img/logo.png" alt="#">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <footer>
+
+
+                <div class="sns">
+                    <a href="https://www.facebook.com/koreadispatch/"><i class="sns_icon fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/koreadispatch/"><i class="sns_icon fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/dispatchsns"><i class="sns_icon fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UC1reoal0esOCQkomB97e9wQ"><i class="sns_icon fab fa-youtube"></i></a>
+                </div>
+
+                <div class="info">
+                    주소 : 서울시 강남구 언주로135길 32-11 / 등록번호 : 서울 아01558 / 등록일자 : 2011년 3월 22일 / 발행일자 : 2011년 3월 30일 / 대표이사・발행인 : 이명구
+                </div>
+
+                <div class="law">
+                    디스패치의 모든 콘텐츠(기사)는 저작권법의 보호를 받은바,
+                    무단 전재, 복사, 배포 등을 금합니다.
+                    이를 어길 시 법적 제재를 받을 수 있습니다.
+                </div>
+
+                <div class="copyright">
+                    copyright©2017 dispatch. All rights reserved.<br />
+                    <a href="#">개인정보취급방침</a> | <a href="#">청소년보호정책</a> | <a href="#">ABOUT US</a>
+                </div>
+            </footer>
+
+        </div>
+        <!--  ======================= End Left Area ============================== -->
+
+
+
+        <!--  ======================= Start Right Area ============================== -->
+        <div class="right">
+
+            <div class="mode">
+                <div class="toggle">
+                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                    <label for="checkbox"  class="label">
+                    <span class="toggle-icon">
+                        <img src="./img/sun.svg" alt="sun icon" class="icon sun" />
+                        <img src="./img/moon.svg" alt="moon icon" class="icon moon" />
+                    </span>
+                    </label>
+              </div>
+            </div>  
+
+            <div id="content1" class="content active" data-tab-content>
+
+                <ul class="news">
+
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all20.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">방탄소년단, '핫100' 7주째 1위… "믿기지 않는 일, 감사합니다"</div>
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/kyung.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">국제배구연맹, 김연경에 "올림픽 한 번 더 나오면 안되나"</div>
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all1.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">"넷플릭스 월드 순위 3위"…전 세계 반응 폭발한 '킹덤: 아신전'</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all2.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">부산이 난리났다…검사 대상만 2,500명인 목욕탕 '집단감염' 상황</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all3.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">폭염 속 나물 채취 나선 70대 여성 숨진 채 발견</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all4.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">방탄소년단 "그래미상 받고싶다…대통령 특별사절 완수하고 올것"(종합)</div>
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all6.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">-올림픽- 신재환, 도마 1위로 결선행…양학선 9년만의 금메달 물거품</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all8.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">-올림픽- 김제덕·안산, 양궁 혼성전서 금메달…한국 첫날 금 1·동 2</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all9.png" alt="#"></div>
+
+                            <div class="category">연예</div>
+                            <div class="account_title">“추억 많아 보여” 이소라 등장에 찐 당황한 신동엽</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all10.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">올림픽 이틀째 일본 3574명 신규확진…여전히 비상</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all11.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">"앤젤리나 졸리 승리"…브래드 피트와 양육권 분쟁 '시즌2'</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all12.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">-올림픽- 장준, 남자 58㎏급 동메달…한국 태권도 도쿄 첫 메달</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all13.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">우익 허 찌른 '비밀작전'…소녀상, 일본 교토에서도 전시됐다</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all14.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">[날씨] 휴일도 펄펄 끓는 한낮 더위…서울 최고 37도</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all15.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">중국 폭우 희생자 58명으로 늘어…침수 터널서도 사망자</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all16.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"이 가수 팬이라고?" 뜻밖의 덕밍아웃한 양궁 금메달리스트 안산</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all17.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">"구글 번역기가 또..." 태권도 은메달리스트 검은 띠에 적힌 요상한 한글</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/all18.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"사실상 전멸이죠" 4단계 2주 연장에 시름 깊어진 자영업자들</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/12.png" alt="#"></div>
+
+                            <div class="category">연예</div>
+                            <div class="account_title">‘슬의생’ 곽선영, 정경호에게 일방적 이별통보... 조정석, 둘 관계 알았다 “충격”</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/11.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">서울·경기도 배달·퀵 라이더, '화이자' 우선 접종한다</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/10.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">아파트 살다가 빌라 이사오니 역체감 장난 아닙니다.</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/9.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"거실 한가운데 화장실이 떡하니... 경악했어요"</div>
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/8.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">방탄소년단, 빌보드 '핫100' 1위…'버터', 6주 연속 차트 장악</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/7.png" alt="#"></div>
+
+                            <div class="category">연예</div>
+                            <div class="account_title">'블랙위도우', 흥행 1위 출발…오후 5시 개봉에도 19만↑</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/1.png" alt="#"></div>
+
+                            <div class="category">연예</div>
+                            <div class="account_title">"유진이 시체로 발견됐다"…'펜트하우스3', 최고 시청률 18.6%</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/2.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "그 남자의 과거는 소설?"…한예슬 남친 과거 행적 확인</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/3.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "할머니! 제 여친이에요"…이승기♥이다인, 속초 데이트 포착</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/4.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">콜드플레이, 5월 7일 신곡 발표…"Higher Power, 암호 문자?"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/5.png" alt="#"></div>
+
+                            <div class="category">연예</div>
+                            <div class="account_title">송혜교, 김구 서거일 맞아 부조 기증…"역사적 업적, 널리 알리고 싶다"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/6.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">"호날두가 손가락 하나 까딱했더니 4조 5천억 증발해버렸죠"</div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div id="content2" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/813-1.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] “내 호적에 올리겠다”…김용건, 연인 A씨와 극적 화해</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/13.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[D-eye] “잘 주는 애, 그리고 창녀 소환”…승리, 성매매 알선의 단톡</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/3.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "할머니! 제 여친이에요"…이승기♥이다인, 속초 데이트 포착</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/2.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "그 남자의 과거는 소설?"…한예슬 남친 과거 행적 확인</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/14.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "항의메일 보내주세요"…함소원, 단톡방 여론작업</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/16.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] "서예지가 조종했다"···김정현, 거짓된 '시간'</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/17.png" alt="#"></div>
+
+                            <div class="category">포커스</div>
+                            <div class="account_title">[단독] “그날, 노래방에 없었다”...박혜수, 학폭 논란의 반전 (종합)</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="content3" class="content" data-tab-content>
+
+                <ul class="news">
+
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/813-4.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[D-eye] 방탄소년단, 퍼미션의 역설..."We don't need Permission"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/813-3.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[D-eye] "희망일까, 고문일까?"…아이즈원, 32억원 펀딩의 현실</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/813-2.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[D-eye] "모든 것이 걸작이다"…방탄소년단, 신곡에 쏟아진 응답</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/18.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[ⓓ인터뷰] "인간 권유리도, 배우 권유리도, 한 걸음 성장했다"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/19.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[D-eye] 트와이스, 독하지 않아도 취한다</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/20.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[ⓓ인터뷰] 태용(TY)은 자란다. 잘한다.</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/21.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[D-eye] 엔하이픈, 기록 파괴자의 탄생</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/22.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[ⓓ인터뷰] "다음 무대가 있다는 것"···브레이브걸스, 역주행의 꿈</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/23.png" alt="#"></div>
+
+                            <div class="category">이목구비</div>
+                            <div class="account_title">[ⓓ인터뷰] "그래미보다 간절한 건?"…방탄소년단이 꾸는 꿈, 아미</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="content4" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/issue1.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"600만 원 보냈다"…크리스 '미성년자 성범죄' 수사 중인 中 공안, 중간 수사 발표</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/issue2.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"체르노빌 사진은 왜?" 제정신인가 싶은 MBC 도쿄올림픽 개회식 중계 장면</div>
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/issue4.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">제주 중학생 무참히 살해한 그놈, '신상공개' 국민청원 나왔다</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/issue5.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"가라테 밀어주기?" 올림픽 태권도 경기 중계 안한다는 日</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/issue6.png" alt="#"></div>
+
+                            <div class="category">이슈</div>
+                            <div class="account_title">"당장 내 입 속으로…" 배스킨라빈스 8월 이달의 맛은 OOO</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+            <div id="content5" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/world1.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">조 라라, 경비행기 추락사…"아내와 탑승, 시신 못 찾아"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/4.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">콜드플레이, 5월 7일 신곡 발표…"Higher Power, 암호 문자?"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/world3.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">레이디 가가, 총격 사건 결말…"용의자 체포, 신고자도 공범"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/world4.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">할시, 임신 소식 깜짝 발표…"Surprise! my rainbow"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/world5.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">에미넴, 조 바이든 공개 지지…"정치에 최초로 곡 사용 허락"</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/world6.png" alt="#"></div>
+
+                            <div class="category">세계</div>
+                            <div class="account_title">스칼렛 요한슨, 3번째 결혼..."작가 콜린 조스트와 부부 됐다"</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="content6" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo1.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[컴백포토] "블랙의 유혹"…문종업, 판타지 분위기</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo2.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[컴백포토] "비주얼이 CG"…문종업, 섹시 카리스마</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo3.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[현장포토] "믿보배 모였다"...조인성·김윤석, 어벤져스 조합</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo4.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[현장포토] "포스터랑 맞췄네"...조인성, 깔맞춤 센스</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo5.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[ⓓX비구협] "품에 안아주세요~"…이세영·순덕, 안고 싶은 매력</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/photo6.png" alt="#"></div>
+
+                            <div class="category">포토</div>
+                            <div class="account_title">[ⓓX비구협] "나랑 산책하러 갈래?"…이세영·리안, 해맑은 미소</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+            <div id="content7" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video1.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "꽁꽁, 숨겨도 제니"…제니, 코로나 입국길</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video2.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "무더위 날린다"...조이, 러블리 미모</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video3.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "인형이 걸아다녀"...로제, 금발의 바비</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video4.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "칸 영화제, 오랜만이야"…임시완, 설렘 가득 출국길</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video5.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "바라보면 힐링"...웬디, 날개 없는 천사</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/video6.png" alt="#"></div>
+
+                            <div class="category">비디오</div>
+                            <div class="account_title">[현장영상] "이 조합, 눈호강"...효진X윤지성, 훈훈 브로맨스</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="content8" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion1.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">"매혹적인, 향기의 위너"…강승윤, 고체향수 모델 발탁</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion2.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">"이게 바로, 여왕의 품격"…송혜교, 우아한 비주얼 (화보)</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion3.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">"동화 같은, 디올의 뮤즈"…수지, 독보적인 분위기 (화보)</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion4.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">"볼빨간이, 머랭?"…홍진영, '홍샷2' 소주 테스트</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion5.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">"청순한데, 섹시하다"…백호, 남친미의 정석 (화보)</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/fashion6.png" alt="#"></div>
+
+                            <div class="category">패션</div>
+                            <div class="account_title">같은 트위드 크롭톱·스커트 입은 '블랙핑크' 제니 X '레드벨벳' 조이</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="content9" class="content" data-tab-content>
+
+                <ul class="news">
+
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand1.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">0kcal라서 여름에 딱이라는 편의점 인기 음료</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand2.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">요즘 수험생들이 환승하고 있다는 신상 음료 링티제로</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand3.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">짱친에게 우정의 오레오 선물한다는 5월 25일은 '오레오데이'</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand4.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">’닭가슴살 꿔바로우'라고 난리난 푸라닭 신상 정체</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand5.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">복숭아향 터지는데 칼로리 0이라서 난리난 신상 링티제로</div>
+                        </a>
+                    </li>
+                    <li class="account">
+                        <a href="">
+                            <div class="photo"><img src="img/cand6.png" alt="#"></div>
+
+                            <div class="category">Canⓓ</div>
+                            <div class="account_title">배라가 또 선넘었다, 설마했는데 탄생해버린 신상 정체</div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+        <!--  ======================= End Right Area ============================== -->
+
+
+
+
+    </section>
+</body>
+
+</html>

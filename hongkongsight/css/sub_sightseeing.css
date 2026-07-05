@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  src: url(font/MJNgai.ttf);
+  font-family: hongkong;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{display:block;}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+
+
+/* Start Fixed Header Area */
+
+/*헤더*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 70px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  font-family: 'Poppins', sans-serif;
+}
+/*//헤더*/
+
+
+/*토글*/
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger {
+  width: 40px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-10px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(10px);
+}
+
+/*토글 반응*/
+.menu-btn.open .menu-btn_burger {
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg);
+}
+/*//토글*/
+
+/*토글 네온반응 추가*/
+.menu-btn:hover {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em #fff;
+}
+
+.menu-btn:hover .menu-btn_burger {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em #fff;
+  box-shadow: inset 0 0 0.5em 0 #fff, 0 0 0.8em 0 #fff;
+}
+
+.menu-btn:hover .menu-btn_burger::before {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em #fff;
+  box-shadow: inset 0 0 0.5em 0 #fff, 0 0 0.8em 0 #fff;
+}
+.menu-btn:hover .menu-btn_burger::after {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em #fff;
+  box-shadow: inset 0 0 0.5em 0 #fff, 0 0 0.8em 0 #fff;
+}
+
+.menu-btn.open:hover .menu-btn_burger {
+  box-shadow: none;
+}
+/*//토글 네온반응 추가*/
+
+/*유리느낌*/
+.glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 1;
+  transition: 0.5s;
+  transition-delay: 1s;
+
+  border-radius: 0 0 100px 0;
+}
+/*//유리느낌*/
+
+
+/*섹션반응 - 유리느낌동작*/
+section.active .glass {
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+  transition-delay: 0s;
+  border-radius: 0;
+}
+/*//섹션반응 - 유리느낌동작*/
+
+
+
+
+
+/*네비게이션*/
+section .navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+section .navigation li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  margin: 40px;
+}
+
+section .navigation li p{
+  font-family: 'hongkong';
+}
+
+section .navigation li p span{
+  font-family: 'Poppins', sans-serif;
+}
+
+section .navigation li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border:5px solid #fff;
+  color: #fff;
+  z-index: 1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 25px;
+  padding-top:40px;
+  padding-bottom:40px;
+  line-height: 30px;
+}
+
+section .navigation li:hover a {
+  color:#f00;
+  letter-spacing: 3px;
+  border:5px solid yellow;
+  box-shadow: inset 0 0 0.5em 0 yellow, 0 0 10px 0 yellow;
+}
+/*//네비게이션*/
+
+section .navigation li {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(200px);
+  transition-delay: calc(0.2s * var(--i));
+}
+
+section.active .navigation li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+}
+/*네비게이션 반응추가*/
+
+/* End Fixed Header Area */
+
+
+/*네온텍스트*/
+.neon-text{
+  position:absolute;
+  top:15%;
+  transform:translate(0%, -50%);
+  animation:text 6s 1;
+  z-index: 3;
+  }
+  
+  #neonthis>span{
+  font-size:90px;
+  color:#fff;
+  font-family: 'Ma Shan Zheng', cursive;
+  line-height: 90%;
+  }
+  
+  #neonthis .eng{
+  font-family: 'Poppins', sans-serif;
+  font-size:80px;
+  font-weight: 600;
+  }
+
+
+/*여행*/
+body{
+  background: url(../img/travel_bg.gif);
+  background-attachment: fixed;
+  background-repeat:repeat;
+  background-size:100%;
+  
+  
+  padding-bottom: 300px;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+body:before
+{
+  background: #020202;
+  text-align: center;
+  content: 'HONGKONG TRAVEL';
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 150px;
+  font-size:13em;
+  font-weight: 700;
+  color:transparent;
+  -webkit-text-stroke: 4px rgba(255, 0, 0, 0.288);
+  
+}
+
+section{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section h2{
+  margin-left:200px;
+  font-size:4em;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+section .container{
+  position:relative;
+  width:1000px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section:nth-child(even) .container{
+  flex-direction: row-reverse;
+}
+
+section .container .imgBx{
+  position:relative;
+  width:800px;
+  height:400px;
+  overflow:hidden;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+
+section .container .imgBx img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+section .container .content{
+  position: absolute;
+  right:0;
+  margin-top:200px;
+  margin-bottom:40px;
+  padding:40px;
+  background:#00573d;
+  z-index: 1;
+  max-width: 400px;
+  color:#fff;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+  border-top:10px solid #f00;
+  border-bottom: 10px solid #f00;
+}
+
+section:nth-child(even) .container .content{
+  left:0;
+}
+
+
+/*정렬 - 플러그인 사용*/
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*스크롤 업*/
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border:none;
+  transition: all 300ms ease-in; 
+  /*pointer-events: none;*/
+  cursor:pointer;
+  z-index: 100;
+  display:none;
+}
+
+.arrow-up:hover{
+  background-color:#f00;
+}
+
+
+/*반응형 시작*/
+@media (max-width: 1300px) {
+  body:before{font-size:150px;}
+    section h2{font-size:50px;}
+}
+
+@media (max-width: 1100px) {
+  section h2{font-size:40px;}
+}
+
+@media (max-width: 950px) {
+  body:before{font-size:100px; -webkit-text-stroke: 2px rgba(255, 0, 0, 0.288);}
+  section{display:block;}
+     section h2{font-size:30px;}
+     section .container{width:100%;}
+     section .container .content{margin-top:600px;}
+     section .container .imgBx{width:100%;}
+     section .container .imgBx img{width:100%;}
+}
+
+@media (max-width: 600px) {
+  body:before{font-size:60px; }
+   
+    }
+
+
+@media(max-width:400px){
+      header {padding: 20px 30px;}
+    
+      section .sns {
+  
+        width:100%;
+        bottom: 20px;
+        right:0px;
+        display: flex;
+        justify-content: center;
+        
+      }
+      
+      section .navigation li {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        width: 250px;
+        height: 80px;
+        margin: 15px;
+      }
+      
+      section .navigation li a {
+        
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 30px;
+      }
+      
+      ul.tabs li {
+        width: 20%;
+        height: 40px;
+        
+    }
+    
+      }
+  
