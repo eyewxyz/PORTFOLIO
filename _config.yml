@@ -6,5 +6,9 @@ exclude:
   - IFCMALL/
   - bootstrap/
   - climateproject/
+  - cafe24/assets/video/
   - hongkongsight/
+  - img/profile.png
+  - img/profile13.png
+  - img/uiux_mockup.png
   - uiux/
